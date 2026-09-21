@@ -541,7 +541,8 @@ OTEL_SEMCONV_STABILITY_OPT_IN=gen_ai_latest_experimental
 - Tool arguments/results — YES (always recommended)
 
 Message JSON schema: `role` + `parts` (text, tool_call, tool_call_response, reasoning);
-`tool_call_response` uses `response` field (not `content`) for the tool result.
+text/reasoning parts use `content`, tool_call parts use `arguments`, and
+`tool_call_response` uses `response` (not `content`) for the tool result.
 
 ### Privacy Controls (If Content Capture Enabled)
 
